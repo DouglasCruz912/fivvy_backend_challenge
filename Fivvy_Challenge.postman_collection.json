@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "2e3b2035-c57c-4208-ab28-8abb124b9525",
+		"name": "Fivvy Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6500535"
+	},
+	"item": [
+		{
+			"name": "GET DISCLAIMER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/getDisclaimer?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"getDisclaimer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DISCLAIMER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/deleteDisclaimer?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"deleteDisclaimer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL DISCLAIMERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/getDisclaimers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"getDisclaimers"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "texto de prueba",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL ACCEPTANCE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/getAllAcceptance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"getAllAcceptance"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT EDIT DISCLAIMER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"prueba\",\n    \"text\": \"texto de prueba\",\n    \"version\": \"2\",\n    \"createAt\": \"09-06-2023\",\n    \"updateAt\": \"09-06-2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/editDisclaimer?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"editDisclaimer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH EDIT DISCLAIMER",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"prueba\",\n    \"text\": \"texto de prueba\",\n    \"version\": \"4\",\n    \"createAt\": \"09-06-2023\",\n    \"updateAt\": \"09-06-2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/patchDisclaimer?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"patchDisclaimer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE DISCLAIMER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"name\": \"prueba 2\",\n    \"text\": \"texto de prueba\",\n    \"version\": \"7\",\n    \"createAt\": \"09-06-2023\",\n    \"updateAt\": \"09-06-2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/createDisclaimer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"createDisclaimer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ACCEPTANCE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"userId\": 2,\n    \"createAt\": \"09-06-2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ChallengeREST/rest/createAcceptance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChallengeREST",
+						"rest",
+						"createAcceptance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
